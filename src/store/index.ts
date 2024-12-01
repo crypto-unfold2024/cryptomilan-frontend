@@ -1,15 +1,9 @@
-import { z } from "zod";
 import { create } from "zustand";
 
-const storeSchema = z
-  .object({
-    address: z.string(),
-  })
-  .extend({
-    setAddress: z.function().args(z.string(), z.string()),
-  });
-
-type Store = z.infer<typeof storeSchema>;
+type Store = {
+  address: string;
+  setAddress: (address: string) => void;
+};
 
 type InitialState = Pick<Store, "address">;
 

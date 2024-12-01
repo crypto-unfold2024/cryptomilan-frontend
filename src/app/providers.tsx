@@ -1,4 +1,5 @@
 'use client'
+import Navbar from '@/components/navbar';
 import { createNetworkConfig, SuiClientProvider } from '@mysten/dapp-kit';
 import { getFullnodeUrl } from '@mysten/sui.js/client';
 import { WalletProvider } from '@suiet/wallet-kit';
@@ -21,6 +22,7 @@ const Providers: React.FC<ComponentPropsWithRef<'div'>> = ({ children, ...props 
         <QueryClientProvider client={queryClient}>
             <SuiClientProvider networks={networkConfig} network="devnet">
                 <WalletProvider {...props}>
+                    <Navbar />
                     {children}
                 </WalletProvider>
             </SuiClientProvider>

@@ -7,7 +7,6 @@ import { Transaction } from '@mysten/sui/transactions';
 const client = new SuiClient({ url: getFullnodeUrl('devnet') });
 
 const walletAddress = '0x3af3fd05d135413e03ddc942ee8e4042f4eb624e8858d3fe4e0e7e5f117b66b3'
-const treasuryCapObjectId = "ELPtL7R97taJi83m5MuNkbLuVdDCydku8SbjCwrnoh8B"; // Replace with the actual TreasuryCap object ID
 
 const AdminPage = () => {
     const tx = new Transaction();
