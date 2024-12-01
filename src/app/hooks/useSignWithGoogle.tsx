@@ -24,9 +24,9 @@ function useSignWithGoogle() {
         }
     }, [])
 
-    useEffect(() => {
-        if (!address) router.push("/")
-    }, [address])
+    // useEffect(() => {
+    //     if (!address) router.push("/")
+    // }, [address])
 
     async function signInWithGoogle() {
         const ephemeralKeyPair = Ed25519Keypair.generate()

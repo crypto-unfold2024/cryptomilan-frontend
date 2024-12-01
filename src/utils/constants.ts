@@ -3,10 +3,7 @@ export const FULLNODE_URL = "https://fullnode.devnet.sui.io";
 export const CLIENT_ID =
   "382062898939-ppg79abson0i84hff1nnmjv4en4rmrkg.apps.googleusercontent.com";
 
-export const REDIRECT_URI =
-  process.env.NODE_ENV === "development"
-    ? "https://localhost:3000"
-    : "https://cryptomilan-frontend.vercel.app";
+export const REDIRECT_URI = "http://localhost:3000";
 
 export const SUI_DEVNET_FAUCET = "https://faucet.devnet.sui.io/gas";
 
